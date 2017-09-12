@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<select class="prov">
+			<option value="">省</option>
+		</select>
+		<select class="city">
+			<option value="">市</option>
+		</select>
+		<select class="dist">
+			<option value="">区/县</option>
+		</select>
+	</body>
+</html>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/city.js"></script>
+<script>
+	
+
+	$(document).ready(function() {
+		city('.prov','.city','.dist','js/city.json')
+	})
+</script>
